@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="../../../assets/img/dog-api-logo.svg" alt="" />
+            <br>
+            <br>
+            
+            <h3>Agregar perros.</h3>
+            
+            <br>
+            <br>
+        </div>
+  
+        <div>
+            <form class="row g-3">
+                <div class="mb-3 row justify-content-center">
+                    <label for="inputBreeds" class="col-sm-2 col-form-label labelsAddDogs">Raza escogida</label>
+                    <div class="col-sm-4">
+                    <input type="text" readonly class="form-control" id="inputBreeds" value="email@example.com">
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-center">
+                    <label for="inputNameDog" class="col-sm-2 col-form-label labelsAddDogs">Nombre del perro</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputNameDog">
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-center">
+                    <label for="inputDateDog" class="col-sm-2 col-form-label labelsAddDogs">Fecha de nacimiento del perro</label>
+                    <div class="col-sm-4">
+                        <!-- <input type="text" class="form-control" id="inputDateDog"> -->
+                        <app-calendar></app-calendar>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" [routerLink]="['']" >Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,35 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Imagen de la raza</th>
+        <th scope="col">Nombre de la raza</th>
+        <th scope="col">Cantidad de perros inscritos</th>
+        <th scope="col">Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr >
+            <th scope="row">{{ cont }}</th>
+            <td>
+                <img src="{{ imageBreed }}" alt="">
+            </td>
+            <td>{{ nameBreed }}</td>
+            <td>{{ quantityBreed }}</td>
+            <td>
+                {{ optionBreed }}
+                <!-- <button class="btn btn-primary" style="margin: 2px;" [routerLink]="['addDogs']">Agregar</button>
+                <button class="btn btn-success" style="margin: 2px;" [routerLink]="['listDogs']">Listar</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+  
+<div class="d-flex justify-content-between p-2">
+    <ngb-pagination [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshBreeds()"></ngb-pagination>
+
+    <select class="custom-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshBreeds()">
+        <option [ngValue]="5">5 items por página</option>
+        <option [ngValue]="10">10 items por página</option>
+    </select>
+</div>

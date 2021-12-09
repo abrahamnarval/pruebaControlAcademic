@@ -2,21 +2,6 @@
     text-align: -webkit-center;
 }
 
-.theadColor{
-    background-color: black;
-    color: white;
-}
-
-.box{
-    box-shadow: 0px 4px 10px 1px rgb(48 48 48);
-    border-radius: 4px;
-}
-
-.boxImage{
-    width: 265px;
-    height: 215px;
-}
-
 @media (max-width: 575.98px) { 
     .container{
         padding-top: 2rem;

@@ -2,19 +2,8 @@
     text-align: -webkit-center;
 }
 
-.theadColor{
-    background-color: black;
-    color: white;
-}
-
-.box{
-    box-shadow: 0px 4px 10px 1px rgb(48 48 48);
-    border-radius: 4px;
-}
-
-.boxImage{
-    width: 265px;
-    height: 215px;
+.labelsAddDogs{
+    text-align: left;
 }
 
 @media (max-width: 575.98px) { 

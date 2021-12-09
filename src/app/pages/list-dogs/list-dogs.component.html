@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="../../../assets/img/dog-api-logo.svg" alt="" />
+            <br>
+            <br>
+            
+            <h3>Listado de perros inscritos.</h3>
+            
+            <br>
+            <br>
+        </div>
+  
+        <div class="row g-3 col-sm-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Perros inscritos</th>
+                    <th scope="col">Fecha de nacimiento</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let country of countries"> -->
+                    <tr>
+                        <th scope="row">b</th>
+                        <td>b</td>
+                        <td>b</td>
+                        <td>b</td>
+                        <td>
+                            <button class="btn btn-primary" style="margin: 2px;" [routerLink]="['addDogs']">Editar</button>
+                            <button class="btn btn-danger" style="margin: 2px;" [routerLink]="['listDogs']">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+              
+            <div class="d-flex justify-content-between p-2">
+                <!-- <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()"></ngb-pagination> -->
+                <ngb-pagination [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()"></ngb-pagination>
+            
+                <!-- <select class="custom-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()"> -->
+                <select class="custom-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()">
+                    <option [ngValue]="5">5 items por página</option>
+                    <option [ngValue]="10">10 items por página</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" [routerLink]="['']" >Volver</button>
+        </div>
+    </div>
+</div>

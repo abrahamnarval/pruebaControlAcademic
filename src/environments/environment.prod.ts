@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  dogAPI: 'https://dog.ceo/api/'
 };
